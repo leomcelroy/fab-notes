@@ -23,7 +23,7 @@ Make sure both are powered and power the **board being programmed first**! That 
 
 ### 3: Download [free-dap](https://github.com/ataradov/free-dap)
 
-You can find the binary with the openocd config file we'll need [here]().
+You can find the binary with the openocd config file we'll need [here](https://github.com/leomcelroy/fab-notes/tree/main/free_dap).
 
 ### 4: Flash the firmware
 
