@@ -43,5 +43,5 @@ Info : SAMD MCU: SAMD11C14A (16KB Flash, 4KB RAM)
 ** Verified OK **
 ```
 
-That lets you know your flashing was successful. Congrats now use your board to help someone else flash theirs.
+That lets you know your flashing was successful.
 
