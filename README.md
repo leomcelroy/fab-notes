@@ -13,7 +13,7 @@ brew install openocd
 
 ### 2: Connect your programmers
 
-The board **doing** the programming is on the right and the board **getting programmed** is on the left.
+The board **getting programmed** is on the left and the board **doing** the programming is on the right.
 
 <img width="700px" src="https://user-images.githubusercontent.com/27078897/192121960-7d66e5bf-eb74-4377-bf84-5426756aa9b0.png"/>
 
