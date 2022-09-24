@@ -5,7 +5,7 @@
 
 ### 1: Download your debugger 
 
-I use `openocd` which seems to work well on Macs. To install this on mac you can run
+I use `openocd` which seems to work well on Macs. To install this on Mac you can run
 
 ```
 brew install openocd
