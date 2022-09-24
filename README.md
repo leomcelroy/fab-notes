@@ -45,3 +45,8 @@ Info : SAMD MCU: SAMD11C14A (16KB Flash, 4KB RAM)
 
 That lets you know your flashing was successful.
 
+## Resources
+
+- http://pub.fabcloud.io/programmers/summary/
+- https://mtm.cba.mit.edu/2021/2021-10_microcontroller-primer/openOCD/
+- https://fabacademy.org/2020/labs/ulb/students/quentin-bolsee/projects/raspi_openocd/
