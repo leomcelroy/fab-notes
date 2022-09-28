@@ -2,7 +2,6 @@
 
 ## Programming your Homemade In-Circuit Programmer
 
-
 ### 1: Download your debugger 
 
 I use `openocd` which seems to work well on Macs. To install this on Mac you can run
@@ -45,8 +44,17 @@ Info : SAMD MCU: SAMD11C14A (16KB Flash, 4KB RAM)
 
 That lets you know your flashing was successful.
 
-## Resources
+### Resources
 
 - http://pub.fabcloud.io/programmers/summary/
 - https://mtm.cba.mit.edu/2021/2021-10_microcontroller-primer/openOCD/
 - https://fabacademy.org/2020/labs/ulb/students/quentin-bolsee/projects/raspi_openocd/
+
+---
+
+## Reset your Git Repo (local becomes remote)
+
+```
+git fetch origin
+git reset --hard origin/master
+```
