@@ -1,60 +1,49 @@
 # Notes on Fab Things
 
-## Programming your Homemade In-Circuit Programmer
+These are notes to preserve my own memory (or rather to allow me not to) and which may be of assistance to those following the fab path.
 
-### 1: Download your debugger 
+[Program a programmer](./PROGRAM_PROGRAMMER.md)
 
-I use `openocd` which seems to work well on Macs. To install this on Mac you can run
+[Program SAMD chips with Arduino](./PROGRAMMING_SAMD_CHIPS_ARDUINO.md)
 
-```
-brew install openocd
-```
+## Miscellaneous
 
-### 2: Connect your programmers
-
-The board **getting programmed** is on the left and the board **doing** the programming is on the right.
-
-<img width="700px" src="https://user-images.githubusercontent.com/27078897/192121960-7d66e5bf-eb74-4377-bf84-5426756aa9b0.png"/>
-
-Make sure both are powered and power the **board being programmed first**! That means plug that board into the usb first.
-
-<img width="700px" src="https://user-images.githubusercontent.com/27078897/192121961-2d7f4879-e009-4f0e-bc03-51aa3f67c834.png"/>
-
-### 3: Download [free-dap](https://github.com/ataradov/free-dap)
-
-You can find the binary with the openocd config file we'll need [here](https://github.com/leomcelroy/fab-notes/tree/main/free_dap).
-
-### 4: Flash the firmware
-
-Navigate to the directory you just downloaded. While in that directory run:
-
-```
-openocd
-```
-
-You should see a message which includes:
-
-```
-** Programming Started **
-Info : SAMD MCU: SAMD11C14A (16KB Flash, 4KB RAM)
-** Programming Finished **
-** Verify Started **
-** Verified OK **
-```
-
-That lets you know your flashing was successful.
-
-### Resources
-
-- http://pub.fabcloud.io/programmers/summary/
-- https://mtm.cba.mit.edu/2021/2021-10_microcontroller-primer/openOCD/
-- https://fabacademy.org/2020/labs/ulb/students/quentin-bolsee/projects/raspi_openocd/
-
----
-
-## Reset your Git Repo (local becomes remote)
+### Reset your Git Repo (local becomes remote)
 
 ```
 git fetch origin
 git reset --hard origin/master
 ```
+
+### Resize Images
+
+I keep a `raw-assets` folder and an `assets` folder.
+
+In my `.gitignore` file I add this line:
+
+```
+raw-assets
+```
+
+This way I won't push large images to git.
+
+Then I use [imagemagick](https://imagemagick.org/index.php) in a bash script to batch compress my images.
+
+You'll have to install imagemagick which I do on mac as such
+
+```
+brew install imagemagick
+```
+
+The batch compression script is
+
+```
+magick mogrify -quality 50 -path ./assets  -format jpg ./raw-assets/*.png
+```
+
+Which you can find here `./compress.sh`. I can run this script with
+
+```
+bash compress.sh
+```
+

@@ -1,0 +1,1 @@
+magick mogrify -quality 50 -path ./assets  -format jpg ./raw-assets/*.png
