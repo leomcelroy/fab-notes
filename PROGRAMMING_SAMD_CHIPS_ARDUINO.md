@@ -20,7 +20,7 @@ You'll have to add the ArduinoCore for the SAMD family of chips.
 
 Navigate to `Arduino IDE` > `Preferences`.
 
-![arduino-preferences](./assets/arduino-preferences.png)
+![arduino-preferences](./assets/arduino-preferences.jpg)
 
 Then in `Additional boards manager URLs` paste this link:
 
@@ -28,7 +28,7 @@ Then in `Additional boards manager URLs` paste this link:
 https://raw.githubusercontent.com/qbolsee/ArduinoCore-fab-sam/master/json/package_Fab_SAM_index.json
 ```
 
-![arduino-board-urls](./assets/arduino-board-urls.png)
+![arduino-board-urls](./assets/arduino-board-urls.jpg)
 
 Navigate to the boards manager. 
 
@@ -36,7 +36,7 @@ Search for `fab`.
 
 Install `Fab SAM core for Arduino` by `Fab Foundation`.
 
-![arduino-boards-manager](./assets/arduino-boards-manager.png)
+![arduino-boards-manager](./assets/arduino-boards-manager.jpg)
 
 ### Programming Your Board
 
@@ -75,12 +75,12 @@ void loop() {
 
 To load this onto the board plug the board in. Select the appropriate port and board.
 
-![arduino-port-select](./assets/arduino-port-select.png)
+![arduino-port-select](./assets/arduino-port-select.jpg)
 
-![arduino-board-select](./assets/arduino-board-select.png)
+![arduino-board-select](./assets/arduino-board-select.jpg)
 
 Next hit `Upload` to load your code onto the board.
 
-![arduino-upload](./assets/arduino-upload.png)
+![arduino-upload](./assets/arduino-upload.jpg)
 
 
