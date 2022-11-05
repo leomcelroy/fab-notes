@@ -15,6 +15,13 @@ git fetch origin
 git reset --hard origin/master
 ```
 
+List serial devices (Mac)
+
+```
+ls /dev/tty.*
+ls /dev/cu.*
+```
+
 ### Resize Images
 
 I keep a `raw-assets` folder and an `assets` folder.
