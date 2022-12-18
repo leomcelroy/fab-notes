@@ -14,10 +14,8 @@ async function openPort() {
     port = await navigator.serial.requestPort();
 
     // Wait for the serial port to open.
-    await port.open({ baudRate: 19200 });
+    await port.open({ baudRate: 9600 });
 }
-
-
 
 function setup() {
   document
