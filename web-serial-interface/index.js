@@ -67,7 +67,7 @@ function draw() {
   if (port && port.readable && port.readable.locked === false) readPort();
 
   const line = readLine();
-  if (line.includes("count")) {
+  if (line.includes("count")) { // count:number
     const newCount = Number(line.split(":")[1].trim())*10;
     count = newCount%width;
   }
